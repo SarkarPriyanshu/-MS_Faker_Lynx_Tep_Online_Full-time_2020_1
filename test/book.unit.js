@@ -7,13 +7,13 @@ if (typeof module !== 'undefined') {
 }
 
 describe("book.js", function() {
-    describe("arthor()", function() {
-        it("returns a arthor", function() {
-            sinon.stub(faker.book, 'arthor').returns('Short Story');
-            var arthor = faker.book.arthor();
+    describe("author()", function() {
+        it("returns a author", function() {
+            sinon.stub(faker.book, 'author').returns('Short Story');
+            var author = faker.book.author();
 
-            assert.equal(arthor, 'Short Story');
-            faker.book.arthor.restore();
+            assert.equal(author, 'Short Story');
+            faker.book.author.restore();
         });
     });
 
