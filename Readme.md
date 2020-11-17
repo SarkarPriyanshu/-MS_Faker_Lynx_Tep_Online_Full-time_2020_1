@@ -16,9 +16,10 @@
 ## Hosted API Microservice
 
 [http://faker.hook.io](http://faker.hook.io/)
- - Supports all Faker API Methods
- - Full-Featured Microservice
- - Hosted by [hook.io](http://hook.io)
+
+- Supports all Faker API Methods
+- Full-Featured Microservice
+- Hosted by [hook.io](http://hook.io)
 
 ```bash
 curl http://faker.hook.io?property=name.findName&locale=de
@@ -45,15 +46,16 @@ curl http://faker.hook.io?property=name.findName&locale=de
 
 ## API
 
-
 ### Faker.fake()
 
 faker.js contains a super useful generator method `Faker.fake` for combining faker API methods using a mustache string format.
 
 **Example:**
 
-``` js
-console.log(faker.fake("{{name.lastName}}, {{name.firstName}} {{name.suffix}}"));
+```js
+console.log(
+  faker.fake("{{name.lastName}}, {{name.firstName}} {{name.suffix}}")
+);
 // outputs: "Marks, Dean Sr."
 ```
 
@@ -65,172 +67,176 @@ This will interpolate the format string with the value of methods `name.lastName
 
 ### API Methods
 
-* address
-  * zipCode
-  * city
-  * cityPrefix
-  * citySuffix
-  * streetName
-  * streetAddress
-  * streetSuffix
-  * streetPrefix
-  * secondaryAddress
-  * county
-  * country
-  * countryCode
-  * state
-  * stateAbbr
-  * latitude
-  * longitude
-* commerce
-  * color
-  * department
-  * productName
-  * price
-  * productAdjective
-  * productMaterial
-  * product
-* company
-  * suffixes
-  * companyName
-  * companySuffix
-  * catchPhrase
-  * bs
-  * catchPhraseAdjective
-  * catchPhraseDescriptor
-  * catchPhraseNoun
-  * bsAdjective
-  * bsBuzz
-  * bsNoun
-* database
-  * column
-  * type
-  * collation
-  * engine
-* date
-  * past
-  * future
-  * between
-  * recent
-  * soon
-  * month
-  * weekday
-* fake
-* finance
-  * account
-  * accountName
-  * mask
-  * amount
-  * transactionType
-  * currencyCode
-  * currencyName
-  * currencySymbol
-  * bitcoinAddress
-  * ethereumAddress
-  * iban
-  * bic
-* hacker
-  * abbreviation
-  * adjective
-  * noun
-  * verb
-  * ingverb
-  * phrase
-* helpers
-  * randomize
-  * slugify
-  * replaceSymbolWithNumber
-  * replaceSymbols
-  * shuffle
-  * mustache
-  * createCard
-  * contextualCard
-  * userCard
-  * createTransaction
-* image
-  * image
-  * avatar
-  * imageUrl
-  * abstract
-  * animals
-  * business
-  * cats
-  * city
-  * food
-  * nightlife
-  * fashion
-  * people
-  * nature
-  * sports
-  * technics
-  * transport
-  * dataUri
-* internet
-  * avatar
-  * email
-  * exampleEmail
-  * userName
-  * protocol
-  * url
-  * domainName
-  * domainSuffix
-  * domainWord
-  * ip
-  * ipv6
-  * userAgent
-  * color
-  * mac
-  * password
-* lorem
-  * word
-  * words
-  * sentence
-  * slug
-  * sentences
-  * paragraph
-  * paragraphs
-  * text
-  * lines
-* name
-  * firstName
-  * lastName
-  * findName
-  * jobTitle
-  * prefix
-  * suffix
-  * title
-  * jobDescriptor
-  * jobArea
-  * jobType
-* phone
-  * phoneNumber
-  * phoneNumberFormat
-  * phoneFormats
-* random
-  * number
-  * float
-  * arrayElement
-  * objectElement
-  * uuid
-  * boolean
-  * word
-  * words
-  * image
-  * locale
-  * alphaNumeric
-  * hexaDecimal
-* system
-  * fileName
-  * commonFileName
-  * mimeType
-  * commonFileType
-  * commonFileExt
-  * fileType
-  * fileExt
-  * directoryPath
-  * filePath
-  * semver
-
+- address
+  - zipCode
+  - city
+  - cityPrefix
+  - citySuffix
+  - streetName
+  - streetAddress
+  - streetSuffix
+  - streetPrefix
+  - secondaryAddress
+  - county
+  - country
+  - countryCode
+  - state
+  - stateAbbr
+  - latitude
+  - longitude
+- commerce
+  - color
+  - department
+  - productName
+  - price
+  - productAdjective
+  - productMaterial
+  - product
+- company
+  - suffixes
+  - companyName
+  - companySuffix
+  - catchPhrase
+  - bs
+  - catchPhraseAdjective
+  - catchPhraseDescriptor
+  - catchPhraseNoun
+  - bsAdjective
+  - bsBuzz
+  - bsNoun
+- database
+  - column
+  - type
+  - collation
+  - engine
+- date
+  - past
+  - future
+  - between
+  - recent
+  - soon
+  - month
+  - weekday
+- fake
+- finance
+  - account
+  - accountName
+  - mask
+  - amount
+  - transactionType
+  - currencyCode
+  - currencyName
+  - currencySymbol
+  - bitcoinAddress
+  - ethereumAddress
+  - iban
+  - bic
+- hacker
+  - abbreviation
+  - adjective
+  - noun
+  - verb
+  - ingverb
+  - phrase
+- helpers
+  - randomize
+  - slugify
+  - replaceSymbolWithNumber
+  - replaceSymbols
+  - shuffle
+  - mustache
+  - createCard
+  - contextualCard
+  - userCard
+  - createTransaction
+- image
+  - image
+  - avatar
+  - imageUrl
+  - abstract
+  - animals
+  - business
+  - cats
+  - city
+  - food
+  - nightlife
+  - fashion
+  - people
+  - nature
+  - sports
+  - technics
+  - transport
+  - dataUri
+- internet
+  - avatar
+  - email
+  - exampleEmail
+  - userName
+  - protocol
+  - url
+  - domainName
+  - domainSuffix
+  - domainWord
+  - ip
+  - ipv6
+  - userAgent
+  - color
+  - mac
+  - password
+- lorem
+  - word
+  - words
+  - sentence
+  - slug
+  - sentences
+  - paragraph
+  - paragraphs
+  - text
+  - lines
+- name
+  - firstName
+  - lastName
+  - findName
+  - jobTitle
+  - prefix
+  - suffix
+  - title
+  - jobDescriptor
+  - jobArea
+  - jobType
+- phone
+  - phoneNumber
+  - phoneNumberFormat
+  - phoneFormats
+- random
+  - number
+  - float
+  - arrayElement
+  - objectElement
+  - uuid
+  - boolean
+  - word
+  - words
+  - image
+  - locale
+  - alphaNumeric
+  - hexaDecimal
+- system
+  - fileName
+  - commonFileName
+  - mimeType
+  - commonFileType
+  - commonFileExt
+  - fileType
+  - fileExt
+  - directoryPath
+  - filePath
+  - semver
+- Books
+  - genre
+  - arthur
+  - publiser
+  - pages
 
 ## Localization
 
@@ -247,58 +253,57 @@ faker.setLocale("de");
 faker.locale = "de";
 ```
 
- * az
- * cz
- * de
- * de_AT
- * de_CH
- * en
- * en_AU
- * en_BORK
- * en_CA
- * en_GB
- * en_IE
- * en_IND
- * en_US
- * en_ZA
- * en_au_ocker
- * es
- * es_MX
- * fa
- * fr
- * fr_CA
- * ge
- * id_ID
- * it
- * ja
- * ko
- * nb_NO
- * nep
- * nl
- * pl
- * pt_BR
- * pt_PT
- * ru
- * sk
- * sv
- * tr
- * uk
- * vi
- * zh_CN
- * zh_TW
-
+- az
+- cz
+- de
+- de_AT
+- de_CH
+- en
+- en_AU
+- en_BORK
+- en_CA
+- en_GB
+- en_IE
+- en_IND
+- en_US
+- en_ZA
+- en_au_ocker
+- es
+- es_MX
+- fa
+- fr
+- fr_CA
+- ge
+- id_ID
+- it
+- ja
+- ko
+- nb_NO
+- nep
+- nl
+- pl
+- pt_BR
+- pt_PT
+- ru
+- sk
+- sv
+- tr
+- uk
+- vi
+- zh_CN
+- zh_TW
 
 ### Individual Localization Packages
 
 As of vesion `v3.0.0` faker.js supports incremental loading of locales.
 
-By default, requiring `faker` will include *all* locale data.
+By default, requiring `faker` will include _all_ locale data.
 
 In a production environment, you may only want to include the locale data for a specific set of locales.
 
 ```js
 // loads only de locale
-var faker = require('faker/locale/de');
+var faker = require("faker/locale/de");
 ```
 
 ## Setting a randomness seed
@@ -385,8 +390,8 @@ http://github.com/marak/faker.js/
 
 faker.js was inspired by and has used data definitions from:
 
- * https://github.com/stympy/faker/ - Copyright (c) 2007-2010 Benjamin Curtis
- * http://search.cpan.org/~jasonk/Data-Faker-0.07/ - Copyright 2004-2005 by Jason Kohles
+- https://github.com/stympy/faker/ - Copyright (c) 2007-2010 Benjamin Curtis
+- http://search.cpan.org/~jasonk/Data-Faker-0.07/ - Copyright 2004-2005 by Jason Kohles
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -406,8 +411,6 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
 LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
 
 ## Backers
 
