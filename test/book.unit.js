@@ -17,13 +17,13 @@ describe("book.js", function() {
         });
     });
 
-    describe("publiser()", function() {
-        it("returns a publiser", function() {
-            sinon.stub(faker.book, 'publiser').returns('Short Story');
-            var publiser = faker.book.publiser();
+    describe("publisher()", function() {
+        it("returns a publisher", function() {
+            sinon.stub(faker.book, 'publisher').returns('Short Story');
+            var publisher = faker.book.publisher();
 
-            assert.equal(publiser, 'Short Story');
-            faker.book.publiser.restore();
+            assert.equal(publisher, 'Short Story');
+            faker.book.publisher.restore();
         });
     });
 

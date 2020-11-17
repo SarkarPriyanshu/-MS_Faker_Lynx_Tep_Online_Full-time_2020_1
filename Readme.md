@@ -235,7 +235,7 @@ This will interpolate the format string with the value of methods `name.lastName
 - Books
   - genre
   - arthor
-  - publiser
+  - publisher
   - pages
 
 ## Localization
