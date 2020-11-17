@@ -1,0 +1,14 @@
+{
+  "name": "facker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "useFackData.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "faker-cli": "^2.0.0"
+  }
+}
