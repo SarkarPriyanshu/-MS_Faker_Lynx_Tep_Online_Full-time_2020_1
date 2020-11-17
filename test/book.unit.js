@@ -7,13 +7,13 @@ if (typeof module !== 'undefined') {
 }
 
 describe("book.js", function() {
-    describe("arthur()", function() {
-        it("returns a arthur", function() {
-            sinon.stub(faker.book, 'arthur').returns('Short Story');
-            var arthur = faker.book.arthur();
+    describe("arthor()", function() {
+        it("returns a arthor", function() {
+            sinon.stub(faker.book, 'arthor').returns('Short Story');
+            var arthor = faker.book.arthor();
 
-            assert.equal(arthur, 'Short Story');
-            faker.book.arthur.restore();
+            assert.equal(arthor, 'Short Story');
+            faker.book.arthor.restore();
         });
     });
 
@@ -37,13 +37,13 @@ describe("book.js", function() {
         });
     });
 
-    describe("pages()", function() {
-        it("returns a pages", function() {
-            sinon.stub(faker.book, 'pages').returns('Short Story');
-            var pages = faker.book.pages();
+    describe("page()", function() {
+        it("returns a page", function() {
+            sinon.stub(faker.book, 'page').returns('Short Story');
+            var page = faker.book.page();
 
-            assert.equal(pages, 'Short Story');
-            faker.book.pages.restore();
+            assert.equal(page, 'Short Story');
+            faker.book.page.restore();
         });
     });
 }); 
