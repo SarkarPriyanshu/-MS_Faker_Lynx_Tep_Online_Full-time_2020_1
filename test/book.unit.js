@@ -1,3 +1,5 @@
+//Added a test code for book modules which we had added
+
 if (typeof module !== 'undefined') {
     var assert = require('assert');
     var sinon = require('sinon');
