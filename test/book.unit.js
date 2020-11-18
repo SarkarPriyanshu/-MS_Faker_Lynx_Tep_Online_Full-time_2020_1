@@ -9,40 +9,40 @@ if (typeof module !== 'undefined') {
 describe("book.js", function() {
     describe("author()", function() {
         it("returns a author", function() {
-            sinon.stub(faker.book, 'author').returns('Short Story');
+            sinon.stub(faker.book, 'author').returns('Virginia Woolf');
             var author = faker.book.author();
 
-            assert.equal(author, 'Short Story');
+            assert.equal(author, 'Virginia Woolf');
             faker.book.author.restore();
-        });
-    });
-
-    describe("publisher()", function() {
-        it("returns a publisher", function() {
-            sinon.stub(faker.book, 'publisher').returns('Short Story');
-            var publisher = faker.book.publisher();
-
-            assert.equal(publisher, 'Short Story');
-            faker.book.publisher.restore();
         });
     });
 
     describe("genre()", function() {
         it("returns a genre", function() {
-            sinon.stub(faker.book, 'genre').returns('Short Story');
+            sinon.stub(faker.book, 'genre').returns('Fan-Fiction');
             var genre = faker.book.genre();
 
-            assert.equal(genre, 'Short Story');
+            assert.equal(genre, 'Fan-Fiction');
             faker.book.genre.restore();
+        });
+    });
+
+    describe("publisher()", function() {
+        it("returns a publisher", function() {
+            sinon.stub(faker.book, 'publisher').returns('Goops Unlimited');
+            var publisher = faker.book.publisher();
+
+            assert.equal(publisher, 'Goops Unlimited');
+            faker.book.publisher.restore();
         });
     });
 
     describe("page()", function() {
         it("returns a page", function() {
-            sinon.stub(faker.book, 'page').returns('Short Story');
+            sinon.stub(faker.book, 'page').returns('423');
             var page = faker.book.page();
 
-            assert.equal(page, 'Short Story');
+            assert.equal(page, '423');
             faker.book.page.restore();
         });
     });
